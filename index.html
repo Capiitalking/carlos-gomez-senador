@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Gómez - Candidato al Senado | PTE PERÚ #19</title>
+    <meta name="description" content="Dr. Carlos Alberto Gómez Portocarrero - Candidato al Senado de la República por el Partido de los Trabajadores y Emprendedores (PTE PERÚ). Reglas claras y oportunidad para todos.">
+    <meta name="keywords" content="Carlos Gómez, Senador, PTE PERÚ, Elecciones Perú, Candidato Senado">
+    <meta property="og:title" content="Carlos Gómez - Candidato al Senado | PTE PERÚ #19">
+    <meta property="og:description" content="Reglas claras y oportunidad para todos. Vota 19.">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* ========================================
+           VARIABLES DE COLORES - FÁCIL DE EDITAR
+           ======================================== */
+        :root {
+            --color-azul-oscuro: #1a237e;
+            --color-azul-medio: #283593;
+            --color-amarillo: #ffc107;
+            --color-amarillo-claro: #ffecb3;
+            --color-blanco: #ffffff;
+            --color-texto-oscuro: #1a237e;
+            --color-texto-claro: #ffffff;
+        }
+
+        /* ========================================
+           ESTILOS GENERALES
+           ======================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .brochure-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: var(--color-blanco);
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+        }
+
+        /* ========================================
+           ENCABEZADO CON LOGO Y PARTIDO
+           ======================================== */
+        .header {
+            background: var(--color-azul-oscuro);
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-partido {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            width: 80px;
+            height: auto;
+        }
+
+        .partido-nombre {
+            color: var(--color-blanco);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .partido-nombre h2 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .numero-candidato {
+            background: var(--color-blanco);
+            padding: 10px 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .numero-candidato span {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--color-azul-oscuro);
+        }
+
+        .numero-label {
+            font-size: 12px;
+            color: var(--color-azul-oscuro);
+            font-weight: 600;
+        }
+
+        /* ========================================
+           SECCIÓN HERO CON FOTO Y NOMBRE
+           ======================================== */
+        .hero-section {
+            background: linear-gradient(135deg, var(--color-amarillo) 0%, #ffb300 100%);
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .foto-candidato {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--color-blanco);
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .info-candidato {
+            flex: 1;
+        }
+
+        .cargo-label {
+            font-size: 14px;
+            color: var(--color-azul-oscuro);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .nombre-candidato {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--color-azul-oscuro);
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .cargo-senador {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-azul-oscuro);
+            margin-bottom: 15px;
+        }
+
+        .lema {
+            background: var(--color-azul-oscuro);
+            color: var(--color-amarillo);
+            padding: 12px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            font-style: italic;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        /* ========================================
+           CONTENIDO PRINCIPAL
+           ======================================== */
+        .main-content {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .section-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 4px solid var(--color-azul-oscuro);
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--color-azul-oscuro);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-amarillo);
+        }
+
+        .section-content {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .section-content p {
+            margin-bottom: 10px;
+        }
+
+        .section-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section-content li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .section-content li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--color-azul-oscuro);
+            font-weight: bold;
+        }
+
+        /* Sección de propuesta de valor destacada */
+        .propuesta-valor {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, var(--color-azul-oscuro) 0%, var(--color-azul-medio) 100%);
+            color: var(--color-blanco);
+            border-left: 4px solid var(--color-amarillo);
+        }
+
+        .propuesta-valor .section-title {
+            color: var(--color-amarillo);
+            border-bottom-color: var(--color-amarillo);
+        }
+
+        .propuesta-valor .section-content {
+            color: var(--color-blanco);
+            font-size: 14px;
+        }
+
+        /* ========================================
+           SECCIÓN DE CONTACTO
+           ======================================== */
+        .contact-section {
+            background: var(--color-amarillo);
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-azul-oscuro);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-blanco);
+            font-size: 18px;
+        }
+
+        .contact-text {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-label {
+            font-size: 11px;
+            color: var(--color-azul-oscuro);
+            font-weight: 600;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--color-azul-oscuro);
+        }
+
+        .vota-box {
+            background: var(--color-azul-oscuro);
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .vota-text {
+            color: var(--color-blanco);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .vota-numero {
+            color: var(--color-amarillo);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+        }
+
+        /* ========================================
+           PIE DE PÁGINA
+           ======================================== */
+        .footer {
+            background: var(--color-azul-oscuro);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo img {
+            width: 50px;
+        }
+
+        .footer-logo span {
+            color: var(--color-blanco);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .footer-slogan {
+            color: var(--color-amarillo);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        /* ========================================
+           ESTILOS PARA IMPRESIÓN
+           ======================================== */
+        @media print {
+            body {
+                background: white;
+            }
+            .brochure-container {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+
+        /* ========================================
+           RESPONSIVE
+           ======================================== */
+        @media (max-width: 800px) {
+            .brochure-container {
+                width: 100%;
+                min-height: auto;
+            }
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="brochure-container">
+        <!-- ========================================
+             ENCABEZADO
+             ======================================== -->
+        <header class="header">
+            <div class="logo-partido">
+                <!-- LOGO DEL PARTIDO - Puedes cambiar la imagen aquí -->
+                <svg class="logo-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Logo PTE PERÚ recreado en SVG -->
+                    <rect x="0" y="0" width="100" height="100" fill="#1a237e" rx="10"/>
+                    <!-- Figura de personas -->
+                    <circle cx="35" cy="35" r="12" fill="#ffc107"/>
+                    <ellipse cx="35" cy="60" rx="18" ry="15" fill="#ffc107"/>
+                    <circle cx="55" cy="40" r="10" fill="#ffffff"/>
+                    <ellipse cx="55" cy="62" rx="15" ry="12" fill="#ffffff"/>
+                    <!-- Texto PTE PERÚ -->
+                    <text x="50" y="92" text-anchor="middle" fill="#ffffff" font-family="Montserrat, sans-serif" font-size="12" font-weight="bold">PTE PERÚ</text>
+                </svg>
+                <div class="partido-nombre">
+                    <h2>Partido de los<br>Trabajadores<br>y Emprendedores</h2>
+                </div>
+            </div>
+            <div class="numero-candidato">
+                <div class="numero-label">VOTA</div>
+                <!-- NÚMERO DE CANDIDATO - Edita aquí -->
+                <span>19</span>
+            </div>
+        </header>
+
+        <!-- ========================================
+             SECCIÓN HERO
+             ======================================== -->
+        <section class="hero-section">
+            <!-- FOTO DEL CANDIDATO - Reemplaza con tu foto -->
+            <img src="flyer2_con_carlos.png" alt="Carlos Gómez" class="foto-candidato" style="object-position: 65% 20%;">
+            
+            <div class="info-candidato">
+                <p class="cargo-label">CANDIDATO AL SENADO DE LA REPÚBLICA</p>
+                <!-- NOMBRE DEL CANDIDATO - Edita aquí -->
+                <h1 class="nombre-candidato">Dr. Carlos Alberto<br>Gómez Portocarrero</h1>
+                <p class="cargo-senador">Para SENADOR a nivel nacional (distrito único)</p>
+                <!-- LEMA DE CAMPAÑA - Edita aquí -->
+                <div class="lema">"REGLAS CLARAS Y OPORTUNIDAD PARA TODOS"</div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CONTENIDO PRINCIPAL
+             ======================================== -->
+        <main class="main-content">
+            <!-- PERFIL PROFESIONAL -->
+            <div class="section-box">
+                <h3 class="section-title">PERFIL PROFESIONAL</h3>
+                <div class="section-content">
+                    <!-- EDITA TU PERFIL AQUÍ -->
+                    <p>Abogado con más de <strong>25 años de experiencia</strong> en el ámbito jurídico, empresarial y financiero.</p>
+                    <p>Amplia trayectoria en la dirección de compañías mineras, consultoras y financieras, combinando conocimiento legal con gestión estratégica y estructuración de capital.</p>
+                    <p>Actualmente lidera <strong>CapiitalKing SAC</strong>, firma especializada en corretaje financiero internacional.</p>
+                </div>
+            </div>
+
+            <!-- FORMACIÓN ACADÉMICA -->
+            <div class="section-box">
+                <h3 class="section-title">FORMACIÓN ACADÉMICA</h3>
+                <div class="section-content">
+                    <!-- EDITA TU FORMACIÓN AQUÍ -->
+                    <ul>
+                        <li>Abogado - Universidad San Martín de Porres</li>
+                        <li>Post Grado - Academia de la Magistratura</li>
+                        <li>Post Grado en Derecho y Gestión Parlamentaria - UNFV</li>
+                        <li>Estudios de MBA - Universidad de la Rioja, España</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- EXPERIENCIA DESTACADA -->
+            <div class="section-box">
+                <h3 class="section-title">EXPERIENCIA DESTACADA</h3>
+                <div class="section-content">
+                    <!-- EDITA TU EXPERIENCIA AQUÍ -->
+                    <ul>
+                        <li>Gerente General de CapiitalKing SAC</li>
+                        <li>Presidente de COOPEMIN Perú (2017-2020)</li>
+                        <li>Presidente Honorario - Cámara Nacional de Minería</li>
+                        <li>Ex Fiscal Provincial y Procurador Público</li>
+                        <li>Asesor Parlamentario del Congreso</li>
+                        <li>Docente Universitario</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- COMPETENCIAS CLAVE -->
+            <div class="section-box">
+                <h3 class="section-title">COMPETENCIAS CLAVE</h3>
+                <div class="section-content">
+                    <!-- EDITA TUS COMPETENCIAS AQUÍ -->
+                    <ul>
+                        <li>Estructuración financiera y asesoría empresarial</li>
+                        <li>Cumplimiento regulatorio y prevención de fraudes</li>
+                        <li>Negociación y alianzas estratégicas</li>
+                        <li>Miembro de ACFE (Association of Certified Fraud Examiners)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PROPUESTA DE VALOR - Sección destacada -->
+            <div class="section-box propuesta-valor">
+                <h3 class="section-title">PROPUESTA DE VALOR</h3>
+                <div class="section-content">
+                    <!-- EDITA TU PROPUESTA DE VALOR AQUÍ -->
+                    <p>Socio estratégico orientado a resultados, capaz de conectar proyectos latinoamericanos con capital global, garantizando <strong>transparencia, rentabilidad y cumplimiento</strong>.</p>
+                    <p>Experiencia comprobada en la gestión de inversiones, financiamiento corporativo y expansión empresarial internacional. Comprometido con el desarrollo del Perú a través de <strong>reglas claras y oportunidades para todos los peruanos</strong>.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- ========================================
+             SECCIÓN DE CONTACTO
+             ======================================== -->
+        <section class="contact-section">
+            <div class="contact-info">
+                <!-- TELÉFONO - Edita aquí -->
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-text">
+                        <div class="contact-label">TELÉFONO</div>
+                        <div class="contact-value">947 376 878</div>
+                    </div>
+                </div>
+                
+                <!-- FACEBOOK - Edita aquí -->
+                <div class="contact-item">
+                    <div class="contact-icon">📘</div>
+                    <div class="contact-text">
+                        <div class="contact-label">FACEBOOK</div>
+                        <div class="contact-value">Carlos Senador</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vota-box">
+                <div class="vota-text">¡VOTA POR EL CAMBIO!</div>
+                <div class="vota-numero">19</div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             PIE DE PÁGINA
+             ======================================== -->
+        <footer class="footer">
+            <div class="footer-logo">
+                <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="100" height="100" fill="#1a237e" rx="10"/>
+                    <circle cx="35" cy="35" r="12" fill="#ffc107"/>
+                    <ellipse cx="35" cy="60" rx="18" ry="15" fill="#ffc107"/>
+                    <circle cx="55" cy="40" r="10" fill="#ffffff"/>
+                    <ellipse cx="55" cy="62" rx="15" ry="12" fill="#ffffff"/>
+                    <text x="50" y="92" text-anchor="middle" fill="#ffffff" font-family="Montserrat, sans-serif" font-size="12" font-weight="bold">PTE PERÚ</text>
+                </svg>
+                <span>PTE PERÚ</span>
+            </div>
+            <div class="footer-slogan">
+                "Trabajando por un Perú con oportunidades para todos"
+            </div>
+        </footer>
+    </div>
+
+    <!-- ========================================
+         INSTRUCCIONES PARA EDICIÓN (No se imprime)
+         ======================================== -->
+    <div style="max-width: 800px; margin: 40px auto; padding: 20px; background: #fff3cd; border-radius: 10px; font-family: Arial, sans-serif; display: none;" class="instrucciones-edicion">
+        <h2 style="color: #856404;">📝 Instrucciones para Editar este Brochure</h2>
+        <ol style="line-height: 2;">
+            <li>Abre este archivo HTML con cualquier editor de texto (Notepad, VS Code, etc.)</li>
+            <li>Busca los comentarios que dicen "EDITA AQUÍ" para encontrar las secciones editables</li>
+            <li>Modifica el texto entre las etiquetas HTML</li>
+            <li>Para cambiar la foto, reemplaza "flyer2_con_carlos.png" con el nombre de tu imagen</li>
+            <li>Guarda el archivo y ábrelo en un navegador para ver los cambios</li>
+            <li>Para imprimir, usa Ctrl+P en el navegador</li>
+        </ol>
+    </div>
+</body>
+</html>
